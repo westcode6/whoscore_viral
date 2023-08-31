@@ -98,7 +98,7 @@ export function LiveScoreboard({
   secondTeamLogo,
 }) {
   return (
-    <header className="w-[100%] shadow-lg text-xs text-neutral-500 px-2 rounded-xl flex items-center justify-between mb-4">
+    <header className="w-[100%] shadow-lg text-xs text-neutral-500 px-2 rounded-xl flex items-center justify-between mb-2 py-2">
       <div className="w-[35%] flex items-center gap-2 justify-start">
         <span className="w-8 h-8">
           <img
@@ -111,7 +111,7 @@ export function LiveScoreboard({
       </div>
 
       <div className="w-[20%] rounded-xl glass-effect flex items-center justify-center">
-        <span className="text-lg text-white font-black">{liveScore}</span>
+        <span className="text-base text-white font-black">{liveScore}</span>
       </div>
       <span />
       <div className="w-[35%] flex items-center gap-2 justify-end">
