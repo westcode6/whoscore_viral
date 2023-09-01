@@ -11,7 +11,7 @@ function App() {
   return (
     <>
       <div>
-        <div className="mt-0 bg-neutral-900 h-screen relative">
+        <div className="mt-0 bg-neutral-900  relative">
           <Router className="">
 
             <div className="App">

@@ -4,8 +4,8 @@ export default function Calender() {
   return (
     <section className="w-full py-2 mr-6 glass-effect">
       <div className="w-full flex items-center justify-center no-scrollbar overflow-x-scroll ">
-        <div className="flex items-end">
-          <div className="w-16 flex justify-end gap-2 cursor-pointer">{/* Calender Plugin Comes here */}
+        <div className="flex items-end ml-4">
+          <div className="w-16 flex justify-end gap-4 cursor-pointer">{/* Calender Plugin Comes here */}
           
           <span className="text-sm text-neutral-200">
           <BsCalendar2WeekFill />

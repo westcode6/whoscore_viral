@@ -7,9 +7,9 @@ export default function ScrollNav() {
   const location = useLocation();
 
   return (
-    <section className="w-full">
+    <section className="w-full glass-effect">
       <div
-        className={`${styles.paddingX} flex items-center justify-between overflow-x-scroll no-scrollbar mb-4`}
+        className={`${styles.paddingX} flex items-center justify-between overflow-x-scroll no-scrollbar shadow-xl py-4`}
       >
         <NavItem
           title="Soccer"

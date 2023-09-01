@@ -3,8 +3,8 @@ import { PiTimerFill } from "react-icons/pi";
 export default function ScoreboardsGrid() {
   return (
     <section className="p-4">
-      <div className="p-3 rounded-2xl bg-neutral-800">
-        <header className="glass-effect text-neutral-600 text-sm font-medium rounded-xl px-2 flex items-center justify-between">
+      <div className="p-3 rounded-2xl glass-effect-light">
+        <header className="glass-effect shadow-sm text-neutral-600 text-sm font-medium rounded-xl px-2 flex items-center justify-between">
           <div className="flex items-center gap-2 justify-start">
             <span className="w-10 h-10">
               <img
@@ -98,9 +98,9 @@ export function LiveScoreboard({
   secondTeamLogo,
 }) {
   return (
-    <header className="w-[100%] shadow-lg text-xs text-neutral-500 px-2 rounded-xl flex items-center justify-between mb-2 py-2">
+    <header className="w-[100%] shadow-md text-xs text-neutral-500  rounded-xl flex items-center  gap-2 justify-between mb-1 px-2 py-2">
       <div className="w-[35%] flex items-center gap-2 justify-start">
-        <span className="w-8 h-8">
+        <span className="w-6 h-6">
           <img
             src={firstTeamLogo}
             alt={firstTeam}
@@ -110,14 +110,14 @@ export function LiveScoreboard({
         <p>{firstTeam}</p>
       </div>
 
-      <div className="w-[20%] rounded-xl glass-effect flex items-center justify-center">
-        <span className="text-base text-white font-black">{liveScore}</span>
+      <div className="w-[20%] rounded-xl glass-effect flex items-center justify-center py-1">
+        <span className="text-xs text-white font-black">{liveScore}</span>
       </div>
       <span />
       <div className="w-[35%] flex items-center gap-2 justify-end">
         <p>{secondTeam}</p>
 
-        <span className="w-8 h-8">
+        <span className="w-6 h-6">
           <img
             src={secondTeamLogo}
             alt={secondTeam}
@@ -125,11 +125,11 @@ export function LiveScoreboard({
           />
         </span>
       </div>
-      <div className="w-[10%] ml-2 flex items-center gap-1 justify-end">
-        <span className="text-xs text-green-400">
+      <div className="w-[5%] ml-4 flex items-center gap-1 justify-end">
+        <span className="text-[10px] text-green-400">
           <PiTimerFill />
         </span>
-        <span className="text-xs font-medium">{liveTime}</span>
+        <span className="text-[10px] font-medium animate-pulse">{liveTime}</span>
       </div>
     </header>
   );
