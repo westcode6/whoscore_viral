@@ -9,7 +9,7 @@ export default function ScrollNav() {
   return (
     <section className="w-full glass-effect">
       <div
-        className={`${styles.paddingX} flex items-center justify-between overflow-x-scroll no-scrollbar shadow-xl py-4`}
+        className={`${styles.paddingX} flex items-center justify-between overflow-x-scroll no-scrollbar shadow-xl py-2`}
       >
         <NavItem
           title="Soccer"

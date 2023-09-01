@@ -100,7 +100,7 @@ export function LiveScoreboard({
   return (
     <header className="w-[100%] shadow-md text-xs text-neutral-500  rounded-xl flex items-center  gap-2 justify-between mb-1 px-2 py-2">
       <div className="w-[35%] flex items-center gap-2 justify-start">
-        <span className="w-6 h-6">
+        <span className="w-7 h-7">
           <img
             src={firstTeamLogo}
             alt={firstTeam}
@@ -110,14 +110,14 @@ export function LiveScoreboard({
         <p>{firstTeam}</p>
       </div>
 
-      <div className="w-[20%] rounded-xl glass-effect flex items-center justify-center py-1">
+      <div className="w-[15%] rounded-xl glass-effect flex items-center justify-center py-1">
         <span className="text-xs text-white font-black">{liveScore}</span>
       </div>
       <span />
       <div className="w-[35%] flex items-center gap-2 justify-end">
         <p>{secondTeam}</p>
 
-        <span className="w-6 h-6">
+        <span className="w-7 h-7">
           <img
             src={secondTeamLogo}
             alt={secondTeam}
@@ -125,7 +125,7 @@ export function LiveScoreboard({
           />
         </span>
       </div>
-      <div className="w-[5%] ml-4 flex items-center gap-1 justify-end">
+      <div className="w-[10%] ml-4 flex items-center gap-1 justify-end">
         <span className="text-[10px] text-green-400">
           <PiTimerFill />
         </span>
